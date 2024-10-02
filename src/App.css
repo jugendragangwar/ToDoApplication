@@ -51,7 +51,7 @@
     padding: 10px;
     border-radius: 4px;
     margin-bottom: 10px;
-    min-width: 200px; /* Set a minimum width for the list items */
+    min-width: 200px; 
   }
   
   .todo-list li button {
