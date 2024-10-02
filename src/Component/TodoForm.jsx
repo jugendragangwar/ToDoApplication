@@ -7,7 +7,7 @@ const TodoForm = () => {
   const [todo, setTodo] = useState([]);
   const [editIndex, setEditIndex] = useState(null);
 
-  // Load tasks from local storage when component mounts
+
   useEffect(() => {
     const storedTodos = localStorage.getItem("todos");
     if (storedTodos) {
@@ -15,7 +15,6 @@ const TodoForm = () => {
     }
   }, []);
 
-  // Save tasks to local storage whenever the todo state changes
   useEffect(() => {
     if (todo.length > 0) {
       localStorage.setItem("todos", JSON.stringify(todo));
